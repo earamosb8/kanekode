@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "@material/textfield/mdc-text-field";
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .container-index {
@@ -10,20 +15,11 @@
 }
 .container-index .slider-container {
   align-self: center;
-  border: solid;
-  height: 83%;
-  width: 58%;
+  height: 100%;
+  width: 52%;
   overflow: hidden;
   position: relative;
   z-index: 2;
-}
-
-.slider-images {
-  width: 3000px;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  display: flex;
 }
 
 .slider-img {
@@ -39,6 +35,65 @@
 .login {
   align-self: center;
   border: solid;
-  height: 83%;
-  width: 42%;
+  height: 100%;
+  padding-top: 80px;
+  width: 48%;
 }
+
+.container-login {
+  border: solid red;
+  height: 90%;
+  margin: auto;
+  width: 70%;
+}
+.container-login h1 {
+  color: #222F3E;
+  margin-bottom: 8px;
+}
+.container-login p {
+  color: #8395A7;
+  margin-bottom: 40px;
+}
+.container-login .social-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-social {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  height: 43px;
+  justify-content: center;
+  width: 119px;
+}
+.btn-social img {
+  align-self: center;
+  height: 17px;
+  width: 17px;
+}
+
+.btn-facebook {
+  background-color: #3a559f;
+}
+
+.btn-gmail {
+  background-color: #FFFFFF;
+  border: solid 1px #C8D6E5;
+}
+
+.btn-linkedin {
+  background-color: #0077B7;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.field-email , .field-password{
+  margin-bottom: 25px;
+  width: 100%;
+
+}
+
+

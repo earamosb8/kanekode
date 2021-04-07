@@ -1,0 +1,70 @@
+
+$color-title: #222F3E;
+$color-message: #8395A7;
+$color-btn-facebook: #3a559f;
+$color-btn-gmail: #FFFFFF;
+$gmail-border-color:#C8D6E5;
+$color-btn-linkedin: #0077B7;
+
+
+.login{
+    align-self: center;
+    border: solid;
+    height: 100%;
+    padding-top: 80px;
+    width: 48%;
+}
+
+.container-login{
+    border: solid red;
+    height: 90%;
+    margin:auto;
+    width: 70%;
+
+    h1{
+        color: $color-title;
+        margin-bottom: 8px;
+    }
+
+    p{
+        color: $color-message;
+        margin-bottom: 40px;
+    }
+
+    .social-buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.btn-social{
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    height: 43px;
+    justify-content: center;
+    width: 119px;
+
+    img{
+        align-self: center;
+        height: 17px;
+        width: 17px;
+    }
+}
+
+.btn-facebook{
+    background-color: $color-btn-facebook;
+}
+
+.btn-gmail{
+    background-color: $color-btn-gmail;
+    border: solid 1px $gmail-border-color;
+}
+
+.btn-linkedin{
+    background-color: $color-btn-linkedin;
+}
+
+.form{
+    margin-top: 20px;
+}
