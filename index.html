@@ -4,32 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>kanekode</title>
 </head>
 <body>
     <div class="container-index">
         <div id="slider-container" class="slider-container">
-            <div class="slider-images">
-                <span class="slider-img">
-                    <img src="./images/foto1.png" alt="imagen">
-                </span>
-                <span class="slider-img">
-                    <img src="./images/foto2.png" alt="imagen">
-                </span>
-                <span class="slider-img">
-                    <img src="./images/foto3.png" alt="imagen">
-                </span>
-                <span class="slider-img">
-                    <img src="./images/foto4.png" alt="imagen">
-                </span>
+            <div class="sliderimg">
+              <img class="sliderimg__photo" src="./images/foto1.png" alt="imagen">
             </div>
-            
         </div>
         <div class="login">
-    
+            <div class="containerlogin">
+                <h1 class="containerlogin__title">Iniciar sesión</h1>
+                <p class="containerlogin__text">Selecciona como deseas ingresar a la plataforma</p>
+                <div class="socialbuttons">
+                    <div class="btnsocial btnsocial--facebook">
+                        <img class="btnsocial__logo" src="./images/facebook.svg" alt="facebook logo">
+                    </div>
+                    <div class="btnsocial btnsocial--gmail">
+                        <img class="btnsocial__logo" src="./images/logo-gmail.png" alt="gmail logo">
+                    </div>
+                    <div class="btnsocial btnsocial--linkedin">
+                       <img class="btnsocial__logo" src="./images/linkedin.svg" alt="linkedin logo">
+                    </div>
+                </div>
+                <form action="" class="form">
+                    <!--Material Desing-->
+                    <label class="field-email mdc-text-field mdc-text-field--outlined">
+                        <span class="mdc-notched-outline">
+                          <span class="mdc-notched-outline__leading"></span>
+                          <span class="mdc-notched-outline__notch">
+                            <span class="mdc-floating-label" id="my-label-id">Correo electronico</span>
+                          </span>
+                          <span class="mdc-notched-outline__trailing"></span>
+                        </span>
+                        <input type="text"  class="mdc-text-field__input field-email__input" aria-labelledby="my-label-id" required minlength="20">
+                    </label>
+                    <label class="field-password mdc-text-field mdc-text-field--outlined">
+                      <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                          <span class="mdc-floating-label" id="my-label-id">Contraseña</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                      </span>
+                      <input type="password" class="mdc-text-field__input field-password__input" aria-labelledby="my-label-id" required minlength="20">
+                    </label>
+                    <p class="form__lostpass">¿Olvidaste tu contraseña?</p>
+                    <button class="btnjoin btnjoin--skin">Iniciar sesión</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="./js/behaviour.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="js/material.js"></script>
 </body>
 </html>

@@ -5,66 +5,109 @@ $color-btn-facebook: #3a559f;
 $color-btn-gmail: #FFFFFF;
 $gmail-border-color:#C8D6E5;
 $color-btn-linkedin: #0077B7;
+$color-text-passrecovery: #6C5DD3;
+$color-btn-join: #354BD4;
 
 
 .login{
     align-self: center;
-    border: solid;
     height: 100%;
     padding-top: 80px;
     width: 48%;
 }
 
-.container-login{
-    border: solid red;
+.containerlogin{
     height: 90%;
     margin:auto;
     width: 70%;
-
-    h1{
-        color: $color-title;
-        margin-bottom: 8px;
-    }
-
-    p{
-        color: $color-message;
-        margin-bottom: 40px;
-    }
-
-    .social-buttons{
-        display: flex;
-        justify-content: space-between;
-    }
 }
 
-.btn-social{
+.containerlogin__title{
+    color: $color-title;
+    margin-bottom: 8px;
+}
+
+.containerlogin__text{
+    color: $color-message;
+    margin-bottom: 40px;
+}
+
+.socialbuttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.btnsocial{
     border-radius: 5px;
     cursor: pointer;
     display: flex;
     height: 43px;
     justify-content: center;
     width: 119px;
-
-    img{
-        align-self: center;
-        height: 17px;
-        width: 17px;
-    }
 }
 
-.btn-facebook{
+.btnsocial__logo{
+    align-self: center;
+    height: 17px;
+    width: 17px;
+}
+
+.btnsocial--facebook{
     background-color: $color-btn-facebook;
 }
 
-.btn-gmail{
+.btnsocial--gmail{
     background-color: $color-btn-gmail;
     border: solid 1px $gmail-border-color;
 }
 
-.btn-linkedin{
+.btnsocial--linkedin{
     background-color: $color-btn-linkedin;
 }
 
 .form{
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
+
+.field-email,.field-password{
+    margin-bottom: 30px;
+    width: 100%;
+}
+.field-email__input{
+    cursor:default;
+}
+.field-password__input{
+    cursor: pointer;
+}
+
+.form__lostpass{
+    color: $color-text-passrecovery;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom:22px;
+}
+
+.btnjoin{
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    width: 275px;
+    align-self: center;
+    font-size: 14px;
+}
+
+
+.btnjoin--skin{
+    background-color: $color-btn-join;
+    color:white;
+
+}
+

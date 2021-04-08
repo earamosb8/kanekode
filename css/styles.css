@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import "@material/textfield/mdc-text-field";
-
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +10,8 @@
   display: flex;
   height: 100vh;
 }
-.container-index .slider-container {
+
+.slider-container {
   align-self: center;
   height: 100%;
   width: 52%;
@@ -22,44 +20,47 @@
   z-index: 2;
 }
 
-.slider-img {
+.sliderimg {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-.slider-img img {
+
+.sliderimg__photo {
   width: 100%;
   height: inherit;
 }
 
 .login {
   align-self: center;
-  border: solid;
   height: 100%;
   padding-top: 80px;
   width: 48%;
 }
 
-.container-login {
-  border: solid red;
+.containerlogin {
   height: 90%;
   margin: auto;
   width: 70%;
 }
-.container-login h1 {
+
+.containerlogin__title {
   color: #222F3E;
   margin-bottom: 8px;
 }
-.container-login p {
+
+.containerlogin__text {
   color: #8395A7;
   margin-bottom: 40px;
 }
-.container-login .social-buttons {
+
+.socialbuttons {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 
-.btn-social {
+.btnsocial {
   border-radius: 5px;
   cursor: pointer;
   display: flex;
@@ -67,33 +68,67 @@
   justify-content: center;
   width: 119px;
 }
-.btn-social img {
+
+.btnsocial__logo {
   align-self: center;
   height: 17px;
   width: 17px;
 }
 
-.btn-facebook {
+.btnsocial--facebook {
   background-color: #3a559f;
 }
 
-.btn-gmail {
+.btnsocial--gmail {
   background-color: #FFFFFF;
   border: solid 1px #C8D6E5;
 }
 
-.btn-linkedin {
+.btnsocial--linkedin {
   background-color: #0077B7;
 }
 
 .form {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
-.field-email , .field-password{
-  margin-bottom: 25px;
+.field-email, .field-password {
+  margin-bottom: 30px;
   width: 100%;
-
 }
 
+.field-email__input {
+  cursor: default;
+}
 
+.field-password__input {
+  cursor: pointer;
+}
+
+.form__lostpass {
+  color: #6C5DD3;
+  cursor: pointer;
+  text-align: right;
+  margin-bottom: 22px;
+}
+
+.btnjoin {
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+  width: 275px;
+  align-self: center;
+  font-size: 14px;
+}
+
+.btnjoin--skin {
+  background-color: #354BD4;
+  color: white;
+}
