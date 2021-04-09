@@ -24,14 +24,13 @@
 
 
 .sliderimg {
-    display: inline-block;
     width:100%;
     height: 100%;
+    
 }
 
 .sliderimg__photo{
     width: 100%;
     height: inherit;
+    cursor: pointer;
 }
-
-

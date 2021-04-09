@@ -7,35 +7,72 @@ $gmail-border-color:#C8D6E5;
 $color-btn-linkedin: #0077B7;
 $color-text-passrecovery: #6C5DD3;
 $color-btn-join: #354BD4;
+$color-link: #3345D7;
 
 
 .login{
+
     align-self: center;
     height: 100%;
-    padding-top: 80px;
+    
     width: 48%;
+
+    @media screen and(min-width: 768px){
+        padding-top: 10px;
+    }
+
+    @media screen and(min-width: 1024px){
+        padding-top:75px;
+    }
 }
 
 .containerlogin{
     height: 90%;
     margin:auto;
-    width: 70%;
+    @media screen and(min-width: 768px){
+        width: 85%;
+    }
+    @media screen and(min-width: 1024px){
+        width: 80%;
+    }
 }
 
 .containerlogin__title{
     color: $color-title;
     margin-bottom: 8px;
+
+    @media screen and(min-width: 768px){
+        text-align: center;
+    }
+
+    @media screen and(min-width: 1024px){
+        text-align: left;
+    }
 }
 
 .containerlogin__text{
     color: $color-message;
     margin-bottom: 40px;
+
+    @media screen and(min-width: 768px){
+        text-align: center;
+    }
+
+    @media screen and(min-width: 1024px){
+        text-align: left;
+    }
 }
 
 .socialbuttons{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    @media screen and(min-width: 768px){
+        margin-bottom: 20px;
+    }
+
+    @media screen and(min-width: 1024px){
+        margin-bottom: 35px;
+    }
 }
 
 .btnsocial{
@@ -45,6 +82,13 @@ $color-btn-join: #354BD4;
     height: 43px;
     justify-content: center;
     width: 119px;
+
+    @media screen and(min-width: 768px){
+        width: 85px;
+    }
+    @media screen and(min-width: 1024px){
+        width: 119px;
+    }
 }
 
 .btnsocial__logo{
@@ -67,6 +111,7 @@ $color-btn-join: #354BD4;
 }
 
 .form{
+    position: relative;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -79,17 +124,30 @@ $color-btn-join: #354BD4;
     width: 100%;
 }
 .field-email__input{
-    cursor:default;
+    cursor: default;
+    font-size: 14px;
 }
+
+
 .field-password__input{
     cursor: pointer;
+    position: absolute;
+    font-size: 14px;
 }
+
 
 .form__lostpass{
     color: $color-text-passrecovery;
     cursor: pointer;
-    text-align: right;
     margin-bottom:22px;
+
+    @media screen and(min-width: 768px){
+        text-align: center;
+    }
+
+    @media screen and(min-width: 1024px){
+        text-align: right;
+    }
 }
 
 .btnjoin{
@@ -102,6 +160,14 @@ $color-btn-join: #354BD4;
     width: 275px;
     align-self: center;
     font-size: 14px;
+    
+
+    @media screen and(min-width: 768px){
+        margin-bottom: 40px;
+    }
+    @media screen and(min-width: 1024px){
+        margin-bottom: 90px;
+    }
 }
 
 
@@ -111,3 +177,41 @@ $color-btn-join: #354BD4;
 
 }
 
+.form__register{
+    text-align: center;
+}
+
+.form__register--link{
+    color: $color-link;
+}
+
+
+.field-password__eye{
+    background-image: url(../images/eyeclose.svg);
+    background-size: 21px 13px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 20px;
+    margin-left:93%;
+    margin-top: 20px;
+    width: 30px;
+    transition-duration: 0.5s;
+    transition-property: background;
+
+    @media screen and(min-width: 768px){
+        margin-left:90%;
+    }
+
+    @media screen and(min-width: 1024px){
+        margin-left:93%;
+    }
+}
+
+.field-password__checkbox:checked + label{
+    background-image: url(../images/eyeopen.svg);
+    /* TRANSITION */
+}
+
+.field-password__checkbox{
+    display: none;
+}

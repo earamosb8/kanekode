@@ -21,7 +21,6 @@
 }
 
 .sliderimg {
-  display: inline-block;
   width: 100%;
   height: 100%;
 }
@@ -29,35 +28,83 @@
 .sliderimg__photo {
   width: 100%;
   height: inherit;
+  cursor: pointer;
 }
 
 .login {
   align-self: center;
   height: 100%;
-  padding-top: 80px;
   width: 48%;
+}
+@media screen and (min-width: 768px) {
+  .login {
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .login {
+    padding-top: 75px;
+  }
 }
 
 .containerlogin {
   height: 90%;
   margin: auto;
-  width: 70%;
+}
+@media screen and (min-width: 768px) {
+  .containerlogin {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .containerlogin {
+    width: 80%;
+  }
 }
 
 .containerlogin__title {
   color: #222F3E;
   margin-bottom: 8px;
 }
+@media screen and (min-width: 768px) {
+  .containerlogin__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .containerlogin__title {
+    text-align: left;
+  }
+}
 
 .containerlogin__text {
   color: #8395A7;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .containerlogin__text {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .containerlogin__text {
+    text-align: left;
+  }
+}
 
 .socialbuttons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+}
+@media screen and (min-width: 768px) {
+  .socialbuttons {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .socialbuttons {
+    margin-bottom: 35px;
+  }
 }
 
 .btnsocial {
@@ -67,6 +114,16 @@
   height: 43px;
   justify-content: center;
   width: 119px;
+}
+@media screen and (min-width: 768px) {
+  .btnsocial {
+    width: 85px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btnsocial {
+    width: 119px;
+  }
 }
 
 .btnsocial__logo {
@@ -89,6 +146,7 @@
 }
 
 .form {
+  position: relative;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -103,17 +161,29 @@
 
 .field-email__input {
   cursor: default;
+  font-size: 14px;
 }
 
 .field-password__input {
   cursor: pointer;
+  position: absolute;
+  font-size: 14px;
 }
 
 .form__lostpass {
   color: #6C5DD3;
   cursor: pointer;
-  text-align: right;
   margin-bottom: 22px;
+}
+@media screen and (min-width: 768px) {
+  .form__lostpass {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .form__lostpass {
+    text-align: right;
+  }
 }
 
 .btnjoin {
@@ -127,8 +197,58 @@
   align-self: center;
   font-size: 14px;
 }
+@media screen and (min-width: 768px) {
+  .btnjoin {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btnjoin {
+    margin-bottom: 90px;
+  }
+}
 
 .btnjoin--skin {
   background-color: #354BD4;
   color: white;
+}
+
+.form__register {
+  text-align: center;
+}
+
+.form__register--link {
+  color: #3345D7;
+}
+
+.field-password__eye {
+  background-image: url(../images/eyeclose.svg);
+  background-size: 21px 13px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 20px;
+  margin-left: 93%;
+  margin-top: 20px;
+  width: 30px;
+  transition-duration: 0.5s;
+  transition-property: background;
+}
+@media screen and (min-width: 768px) {
+  .field-password__eye {
+    margin-left: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .field-password__eye {
+    margin-left: 93%;
+  }
+}
+
+.field-password__checkbox:checked + label {
+  background-image: url(../images/eyeopen.svg);
+  /* TRANSITION */
+}
+
+.field-password__checkbox {
+  display: none;
 }
