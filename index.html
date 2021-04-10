@@ -24,42 +24,41 @@
                         <img class="btnsocial__logo" src="./images/facebook.svg" alt="facebook logo">
                     </div>
                     <div class="btnsocial btnsocial--gmail">
-                        <img class="btnsocial__logo" src="./images/logo-gmail.png" alt="gmail logo">
+                        <img class="btnsocial__logo" src="./images/logo-gmail.svg" alt="gmail logo">
                     </div>
                     <div class="btnsocial btnsocial--linkedin">
                        <img class="btnsocial__logo" src="./images/linkedin.svg" alt="linkedin logo">
                     </div>
                 </div>
-                <form action="" class="form">
+                <form action="./menu.html" class="form">
                     <!--Material Desing-->
                     <label class="field-email mdc-text-field mdc-text-field--outlined">
                         <span class="mdc-notched-outline">
                           <span class="mdc-notched-outline__leading"></span>
                           <span class="mdc-notched-outline__notch">
-                            <span class="mdc-floating-label" id="my-label-id">Correo electronico</span>
+                            <span class="mdc-floating-label inputlabel" id="my-label-id">Correo electronico</span>
                           </span>
                           <span class="mdc-notched-outline__trailing"></span>
                         </span>
-                        <input type="text"  class="mdc-text-field__input field-email__input" aria-labelledby="my-label-id" required minlength="20">
+                        <input type="email"  class="mdc-text-field__input field-email__input" aria-labelledby="my-label-id" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Por favor ingrese un correo valido">
                     </label>
-                    <label class="field-password mdc-text-field mdc-text-field--outlined">
+
+                    <label class="field-password mdc-text-field mdc-text-field--outlined ">
                       <input class="field-password__checkbox" id="field-password__checkbox" type="checkbox">
                       <label class="field-password__eye" for="field-password__checkbox"></label>
-                      <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline  ">
                        
-                        <span class="mdc-notched-outline__leading">
+                        <span class="mdc-notched-outline__leading  ">
                          
                         </span>
                         
-                        <span class="mdc-notched-outline__notch">
-                          <span class="mdc-floating-label" id="my-label-id">Contraseña</span>
+                        <span class="mdc-notched-outline__notch  ">
+                          <span class="mdc-floating-label inputlabel" id="my-label-id">Contraseña</span>
                           
                         </span>
-                        <span class="mdc-notched-outline__trailing"></span>
+                        <span class="mdc-notched-outline__trailing "></span>
                       </span>
                       <input type="password" class="mdc-text-field__input field-password__input" aria-labelledby="my-label-id" required minlength="20">
-    
-                      
                     </label>
                     
                     <p class="form__lostpass">¿Olvidaste tu contraseña?</p>

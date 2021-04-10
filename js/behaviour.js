@@ -20,7 +20,6 @@ inputPassword.addEventListener('click', function(){
 })
 
 
-
 //slider: change the images each 3 seconds
 
 let indice = 1;
@@ -30,10 +29,9 @@ window.addEventListener('load',function(){
     eyeImg.style.opacity= 1;
 
     function show(){
-        
         let opacity = Number(window.getComputedStyle(image).getPropertyValue("opacity"));
         if(opacity < 1){
-            opacity = opacity + 0.01;
+            opacity = opacity + 0.007;
             image.style.opacity= opacity;
         }
     }

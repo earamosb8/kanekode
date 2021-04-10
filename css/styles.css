@@ -19,6 +19,11 @@
   position: relative;
   z-index: 2;
 }
+@media screen and (max-width: 767px) and (min-height: 569px) {
+  .slider-container {
+    width: 60%;
+  }
+}
 
 .sliderimg {
   width: 100%;
@@ -38,12 +43,18 @@
 }
 @media screen and (min-width: 768px) {
   .login {
-    padding-top: 10px;
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 767px) and (min-height: 569px) {
+  .login {
+    padding-top: 15px;
+    width: 40%;
   }
 }
 @media screen and (min-width: 1024px) {
   .login {
-    padding-top: 75px;
+    padding-top: 4vh;
   }
 }
 
@@ -56,9 +67,25 @@
     width: 85%;
   }
 }
+@media screen and (max-width: 767px) and (min-height: 569px) {
+  .containerlogin {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .containerlogin {
-    width: 80%;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .containerlogin {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .containerlogin {
+    width: 1000px;
+    font-size: 66%;
   }
 }
 
@@ -71,9 +98,24 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 767px) and (min-height: 569px) {
+  .containerlogin__title {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   .containerlogin__title {
     text-align: left;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .containerlogin__title {
+    font-size: 5.5vh;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .containerlogin__title {
+    font-size: 5rem;
   }
 }
 
@@ -86,9 +128,19 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 767px) and (min-height: 569px) {
+  .containerlogin__text {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   .containerlogin__text {
     text-align: left;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .containerlogin__text {
+    font-size: 2.5rem;
   }
 }
 
@@ -120,9 +172,20 @@
     width: 85px;
   }
 }
+@media screen and (max-width: 767px) and (min-height: 569px) {
+  .btnsocial {
+    width: 25%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .btnsocial {
     width: 119px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .btnsocial {
+    width: 28em;
+    height: 8em;
   }
 }
 
@@ -130,6 +193,12 @@
   align-self: center;
   height: 17px;
   width: 17px;
+}
+@media screen and (min-width: 2560px) {
+  .btnsocial__logo {
+    width: 8em;
+    height: 5em;
+  }
 }
 
 .btnsocial--facebook {
@@ -158,16 +227,37 @@
   margin-bottom: 30px;
   width: 100%;
 }
+@media screen and (min-width: 2560px) {
+  .field-email, .field-password {
+    height: 8em;
+  }
+}
 
 .field-email__input {
   cursor: default;
   font-size: 14px;
+}
+@media screen and (min-width: 2560px) {
+  .field-email__input {
+    font-size: 3.2em;
+  }
 }
 
 .field-password__input {
   cursor: pointer;
   position: absolute;
   font-size: 14px;
+}
+@media screen and (min-width: 2560px) {
+  .field-password__input {
+    font-size: 3.2em;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .inputlabel {
+    font-size: 3.2em;
+  }
 }
 
 .form__lostpass {
@@ -180,9 +270,19 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 767px) and (min-height: 569px) {
+  .form__lostpass {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   .form__lostpass {
     text-align: right;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .form__lostpass {
+    font-size: 3.2em;
   }
 }
 
@@ -202,9 +302,22 @@
     margin-bottom: 40px;
   }
 }
+@media screen and (max-width: 767px) and (min-height: 569px) {
+  .btnjoin {
+    width: 95%;
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .btnjoin {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .btnjoin {
+    width: 375px;
+    height: 80px;
+    font-size: 2.5em;
   }
 }
 
@@ -216,9 +329,16 @@
 .form__register {
   text-align: center;
 }
+@media screen and (min-width: 2560px) {
+  .form__register {
+    margin-top: 25px;
+    font-size: 3.5em;
+  }
+}
 
 .form__register--link {
   color: #3345D7;
+  cursor: pointer;
 }
 
 .field-password__eye {
@@ -238,9 +358,23 @@
     margin-left: 90%;
   }
 }
+@media screen and (max-width: 767px) and (min-height: 569px) {
+  .field-password__eye {
+    margin-left: 86%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .field-password__eye {
     margin-left: 93%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .field-password__eye {
+    margin-top: 30px;
+    background-size: 48px 30px;
+    width: 60px;
+    height: 30px;
+    margin-left: 90%;
   }
 }
 
@@ -251,4 +385,130 @@
 
 .field-password__checkbox {
   display: none;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.menu {
+  border: solid;
+  width: 265px;
+  padding: 35px 15px 0px 15px;
+  transition: width 0.25s;
+}
+
+.option__text {
+  font-size: 14px;
+}
+
+.checkboxbutton:checked + .menu > .option > .option__text {
+  display: none;
+}
+
+.menu__buttonandtitle {
+  border: solid;
+  display: flex;
+}
+
+.space {
+  width: 80px;
+}
+
+.title {
+  color: #222F3E;
+  font-size: 30px;
+  font-weight: bold;
+  transition: margin-left 2s;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.checkboxbutton:checked + .menu {
+  width: 96px;
+}
+
+.checkboxbutton:checked + .menu > .menu__buttonandtitle {
+  flex-direction: column;
+}
+
+.checkboxbutton:checked + .menu > .menu__buttonandtitle > .title {
+  overflow: hidden;
+  width: 18px;
+  transition: margin-left 1s;
+}
+
+.checkboxbutton:not(:checked) + .menu > .menu__buttonandtitle > .title {
+  transition: margin-left 2s;
+  margin-left: 25px;
+  width: 19px;
+}
+
+.checkboxbutton:checked + .menu > .menu__buttonandtitle > .burgerbutton {
+  margin: auto;
+}
+
+.container__info {
+  border: solid;
+  transition: width 2s;
+  width: 100%;
+}
+
+.checkboxbutton {
+  display: none;
+  position: absolute;
+}
+
+.menu__buttonandtitle {
+  border: solid red;
+  display: flex;
+  flex-direction: row;
+}
+
+.burgerbutton {
+  cursor: pointer;
+  height: 20px;
+  margin-top: 12px;
+  position: relative;
+  text-align: center;
+  transition: margin-right 2s;
+  width: 23px;
+}
+
+.span1, .span2, .span3 {
+  background-color: #222F3E;
+  border-radius: 5px;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  transition: all 400ms ease;
+}
+
+.span2 {
+  left: 4px;
+  top: 5.5px;
+  transition: left 0.5s;
+  width: 15px;
+}
+
+.checkboxbutton:checked + .menu > .menu__buttonandtitle > .burgerbutton > .span2 {
+  left: 0px;
+}
+
+.span3 {
+  left: 9px;
+  width: 10px;
+  top: 12px;
+  transition: left 0.5s;
+}
+
+.checkboxbutton:checked + .menu > .menu__buttonandtitle > .burgerbutton > .span3 {
+  left: 0px;
 }

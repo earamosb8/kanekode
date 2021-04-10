@@ -1,0 +1,135 @@
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.menu{
+    border: solid;
+    width: 265px;
+    padding: 35px 15px 0px 15px;
+    transition:width 0.25s;
+}
+
+.option__text{
+    font-size: 14px;
+    
+}
+
+.checkboxbutton:checked + .menu > .option > .option__text{
+    display: none;
+    
+}
+
+.menu__buttonandtitle{
+    border: solid;
+    display: flex;
+}
+
+.space{
+    width: 80px;
+}
+
+.title{
+    color:#222F3E;
+    font-size: 30px;
+    font-weight: bold;
+    transition: margin-left 2s;
+    margin-left:15px;
+    text-align: center;
+    
+}
+
+
+
+.checkboxbutton:checked + .menu{
+    width: 96px;
+}
+.checkboxbutton:checked + .menu > .menu__buttonandtitle{
+    flex-direction: column;
+}
+.checkboxbutton:checked + .menu > .menu__buttonandtitle > .title{
+    overflow: hidden;
+    width: 18px;
+    transition: margin-left 1s;
+    
+}
+
+.checkboxbutton:not(:checked) + .menu > .menu__buttonandtitle > .title{
+    transition: margin-left 2s;
+    margin-left:25px;
+    width: 19px;
+}
+
+.checkboxbutton:checked + .menu > .menu__buttonandtitle > .burgerbutton{
+    margin: auto;
+}
+
+
+
+
+.container__info{
+    border: solid;
+    transition:width 2s;
+    width: 100%;
+}
+
+.checkboxbutton{
+    display: none;
+    position: absolute;
+}
+
+.menu__buttonandtitle{
+    border: solid red;
+    display: flex;
+    flex-direction: row;
+}
+.burgerbutton{
+    cursor: pointer;
+    height: 20px;
+    margin-top: 12px;
+    position: relative;
+    text-align: center;
+    transition: margin-right 2s ;
+    width: 23px;
+}
+
+.span1, .span2, .span3{
+    background-color: #222F3E;
+    border-radius: 5px;
+    content: '';
+    height: 3px;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    transition: all 400ms ease;
+}
+
+.span2{
+    left: 4px;
+    top: 5.5px;
+    transition: left 0.5s;
+    width: 15px;
+}
+
+.checkboxbutton:checked + .menu > .menu__buttonandtitle > .burgerbutton > .span2{
+    left: 0px;
+}
+
+.span3{
+    left: 9px;
+    width: 10px;
+    top: 12px;
+    transition: left 0.5s;
+}
+.checkboxbutton:checked + .menu > .menu__buttonandtitle > .burgerbutton > .span3{
+    left: 0px;
+}
+
+
+
+
+

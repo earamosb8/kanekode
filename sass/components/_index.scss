@@ -19,6 +19,9 @@
     overflow: hidden;
     position: relative;
     z-index: 2;
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        width: 60%;
+    }
 }
 
 
@@ -26,11 +29,12 @@
 .sliderimg {
     width:100%;
     height: 100%;
-    
 }
 
 .sliderimg__photo{
     width: 100%;
     height: inherit;
     cursor: pointer;
+    
+    
 }
