@@ -9,22 +9,90 @@ $color-text-passrecovery: #6C5DD3;
 $color-btn-join: #354BD4;
 $color-link: #3345D7;
 
+//Login
 
-.login{
+.btnjoin{
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    width: 275px;
     align-self: center;
-    height: 100%;
-    width: 48%;
+    font-size: 14px;
+    
+
     @media screen and(min-width: 768px){
-        padding-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        width: 95%;
+        margin-bottom: 60px;
+    }
+    @media screen and(min-width: 1024px){
+        margin-bottom: 70px;
+    }
+
+    @media screen and(min-width: 2560px){
+        width: 375px;
+        height: 80px;
+        font-size: 2.5em;
+    }
+}
+
+
+.btnjoin--skin{
+    background-color: $color-btn-join;
+    color:white;
+
+}
+
+.btnsocial{
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    height: 43px;
+    justify-content: center;
+    width: 119px;
+
+    @media screen and(min-width: 768px){
+        width: 85px;
     }
     @media screen and(max-width: 767px) and (min-height: 569px) {
-        padding-top: 15px;
-        width: 40%;
+        width: 25%;
     }
-
     @media screen and(min-width: 1024px){
-        padding-top:4vh;
+        width: 119px;
     }
+    @media screen and(min-width: 2560px){
+        width: 28em;
+        height: 8em;
+    }
+}
+
+.btnsocial__logo{
+    align-self: center;
+    height: 17px;
+    width: 17px;
+    @media screen and(min-width: 2560px){
+        width: 8em;
+        height: 5em;
+    }
+}
+
+.btnsocial--facebook{
+    background-color: $color-btn-facebook;
+}
+
+.btnsocial--gmail{
+    background-color: $color-btn-gmail;
+    border: solid 1px $gmail-border-color;
+}
+
+.btnsocial--linkedin{
+    background-color: $color-btn-linkedin;
 }
 
 .containerlogin{
@@ -94,74 +162,6 @@ $color-link: #3345D7;
     }
 }
 
-.socialbuttons{
-    display: flex;
-    justify-content: space-between;
-    @media screen and(min-width: 768px){
-        margin-bottom: 20px;
-    }
-
-    @media screen and(min-width: 1024px){
-        margin-bottom: 35px;
-    }
-    
-}
-
-.btnsocial{
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    height: 43px;
-    justify-content: center;
-    width: 119px;
-
-    @media screen and(min-width: 768px){
-        width: 85px;
-    }
-    @media screen and(max-width: 767px) and (min-height: 569px) {
-        width: 25%;
-    }
-    @media screen and(min-width: 1024px){
-        width: 119px;
-    }
-    @media screen and(min-width: 2560px){
-        width: 28em;
-        height: 8em;
-    }
-}
-
-.btnsocial__logo{
-    align-self: center;
-    height: 17px;
-    width: 17px;
-    @media screen and(min-width: 2560px){
-        width: 8em;
-        height: 5em;
-    }
-}
-
-.btnsocial--facebook{
-    background-color: $color-btn-facebook;
-}
-
-.btnsocial--gmail{
-    background-color: $color-btn-gmail;
-    border: solid 1px $gmail-border-color;
-}
-
-.btnsocial--linkedin{
-    background-color: $color-btn-linkedin;
-}
-
-.form{
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
 .field-email,.field-password{
     margin-bottom: 30px;
     width: 100%;
@@ -177,97 +177,14 @@ $color-link: #3345D7;
     }
 }
 
-
-.field-password__input{
-    cursor: pointer;
-    position: absolute;
-    font-size: 14px;
-    @media screen and(min-width: 2560px){
-        font-size: 3.2em;
-    }
+.field-password__checkbox{
+    display: none;
 }
 
-.inputlabel{
-    @media screen and(min-width: 2560px){
-        font-size: 3.2em;
-        
-    }
+.field-password__checkbox:checked + label{
+    background-image: url(../images/eyeopen.svg);
+    /* TRANSITION */
 }
-
-
-.form__lostpass{
-    color: $color-text-passrecovery;
-    cursor: pointer;
-    margin-bottom:22px;
-
-    @media screen and(min-width: 768px){
-        text-align: center;
-    }
-
-    @media screen and(max-width: 767px) and (min-height: 569px) {
-        text-align: center;
-    }
-
-    @media screen and(min-width: 1024px){
-        text-align: right;
-    }
-
-    @media screen and(min-width: 2560px){
-        font-size: 3.2em;
-    }
-}
-
-.btnjoin{
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    height: 56px;
-    text-align: center;
-    line-height: 56px;
-    width: 275px;
-    align-self: center;
-    font-size: 14px;
-    
-
-    @media screen and(min-width: 768px){
-        margin-bottom: 40px;
-    }
-
-    @media screen and(max-width: 767px) and (min-height: 569px) {
-        width: 95%;
-        margin-bottom: 60px;
-    }
-    @media screen and(min-width: 1024px){
-        margin-bottom: 70px;
-    }
-
-    @media screen and(min-width: 2560px){
-        width: 375px;
-        height: 80px;
-        font-size: 2.5em;
-    }
-}
-
-
-.btnjoin--skin{
-    background-color: $color-btn-join;
-    color:white;
-
-}
-
-.form__register{
-    text-align: center;
-    @media screen and(min-width: 2560px){
-        margin-top: 25px;
-        font-size: 3.5em;
-    }
-}
-
-.form__register--link{
-    color: $color-link;
-    cursor: pointer;
-}
-
 
 .field-password__eye{
     background-image: url(../images/eyeclose.svg);
@@ -298,15 +215,92 @@ $color-link: #3345D7;
         width: 60px;
         height: 30px;
         margin-left:90%;
-        
+    }
+}
+.field-password__input{
+    cursor: pointer;
+    position: absolute;
+    font-size: 14px;
+    @media screen and(min-width: 2560px){
+        font-size: 3.2em;
     }
 }
 
-.field-password__checkbox:checked + label{
-    background-image: url(../images/eyeopen.svg);
-    /* TRANSITION */
+.form{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-.field-password__checkbox{
-    display: none;
+.form__lostpass{
+    color: $color-text-passrecovery;
+    cursor: pointer;
+    margin-bottom:22px;
+
+    @media screen and(min-width: 768px){
+        text-align: center;
+    }
+
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        text-align: center;
+    }
+
+    @media screen and(min-width: 1024px){
+        text-align: right;
+    }
+
+    @media screen and(min-width: 2560px){
+        font-size: 3.2em;
+    }
+}
+
+.form__register{
+    text-align: center;
+    @media screen and(min-width: 2560px){
+        margin-top: 25px;
+        font-size: 3.5em;
+    }
+}
+
+.form__register--link{
+    color: $color-link;
+    cursor: pointer;
+}
+
+.inputlabel{
+    @media screen and(min-width: 2560px){
+        font-size: 3.2em;
+    }
+}
+
+.login{
+    align-self: center;
+    height: 100%;
+    width: 48%;
+    @media screen and(min-width: 768px){
+        padding-top: 15px;
+    }
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        padding-top: 15px;
+        width: 40%;
+    }
+
+    @media screen and(min-width: 1024px){
+        padding-top:4vh;
+    }
+}
+
+.socialbuttons{
+    display: flex;
+    justify-content: space-between;
+    @media screen and(min-width: 768px){
+        margin-bottom: 20px;
+    }
+
+    @media screen and(min-width: 1024px){
+        margin-bottom: 35px;
+    }
 }

@@ -1,0 +1,237 @@
+$background-color-menu : #FFFFFF;
+$color-title-menu:#222F3E;
+$background-btn-selected:#6C5DD3;
+$color-btn-selected:#FFFFFF;
+$background-btn-burger:#222F3E;
+$hover-color:#FFFFFF;
+$color-icons:#8395a7;
+
+
+//Dashboard
+
+@media screen and(min-width: 500px){
+    .burgerbutton{
+        cursor: pointer;
+        height: 20px;
+        margin-top: 16px;
+        position: relative;
+        text-align: center;
+        transition: margin-right 2s ;
+        width: 23px;
+        @media screen and(min-width: 1024px){
+            margin-left: 22px;
+        }
+    }
+    
+    .burgerbutton__line1, .burgerbutton__line2, .burgerbutton__line3{
+        background-color: $background-btn-burger ;
+        border-radius: 5px;
+        content: '';
+        height: 2px;
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 20px;
+        transition: all 400ms ease;
+    }
+    
+    .burgerbutton__line2{
+        left: 4px;
+        top: 5.5px;
+        transition: left 0.5s;
+        width: 15px;
+    }
+    
+    .burgerbutton__line3{
+        left: 9px;
+        top: 12px;
+        transition: left 0.5s;
+        width: 10px;
+    }
+    
+    .checkboxbutton{
+        display: none;
+        position: absolute;
+    }
+    
+    .checkboxbutton:checked + .menu{
+        width: 96px;
+    }
+    
+    .checkboxbutton:checked + .menu > .menu__buttonandtitle{
+        flex-direction: column;
+        margin:auto;
+    }
+    .checkboxbutton:checked + .menu > .menu__buttonandtitle > .menu__title{
+        overflow: hidden;
+        width: 18px;
+        transition: margin-left  1.5s;
+    }
+    
+    .checkboxbutton:not(:checked) + .menu > .menu__buttonandtitle > .menu__title{
+        margin-left:15px;
+        transition: margin-left 2s;
+
+        @media screen and(min-width: 1024px){
+            margin-left:10px;
+        }
+
+    }
+    
+    .checkboxbutton:checked + .menu > .menu__buttonandtitle > .burgerbutton{
+        margin: auto;
+    }
+    
+    .checkboxbutton:checked + .menu > .menu__buttonandtitle > .burgerbutton > .burgerbutton__line2{
+        left: 0px;
+    }
+    
+    .checkboxbutton:checked + .menu > .menu__buttonandtitle > .burgerbutton > .burgerbutton__line3{
+        left: 0px;
+    }
+    
+    .checkboxbutton:checked + .menu > .optionbutton {
+        width: 56px;
+    }
+    
+    .checkboxbutton:not(:checked) + .menu > .optionbutton {
+        //225px
+        width: 160px;
+        @media screen and(min-width: 1024px){
+            width: 80%;
+        }
+
+    }
+    
+    .checkboxbutton:checked + .menu > .optionbutton > .optionbutton__icon {
+        margin:auto;
+    }
+    
+    .checkboxbutton:checked + .menu > .optionbutton > .optionbutton__text{
+        display: none;
+    }
+
+    
+
+    .container{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container__dashboard{
+        transition:width 2s;
+        width: 100%;
+    }
+
+    .menu{
+        box-sizing: border-box;
+        background-color: $background-color-menu;
+        padding: 25px 0px 0px 0px;
+        position: relative;
+        transition:width 0.6s;
+        width: 225px;
+        @media screen and(min-width: 1024px){
+            width: 300px;
+        }
+    }
+
+    .menu__buttonandtitle{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        margin-left: 8px;
+        @media screen and(min-width: 1024px){
+            margin-left: 12px;
+        }
+    }
+    .menu__title{
+        color: $color-title-menu;
+        font-size: 30px;
+        font-weight: bold;
+        overflow: hidden;
+        margin-left:30px;
+        text-align: center;
+        transition: margin-left 2s;
+    }
+    .space{
+        width: 80px;
+    }
+    .optionbutton{
+        cursor: pointer;
+        background-color: transparent;
+        display: flex;
+        font-size: 14px;
+        height: 56px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: left;
+        width: 80%;
+        transition: width  1s;
+    }
+
+    .optionbutton--selected:hover{
+        color: white;
+    }
+    .optionbutton--selected{
+        background-color: $background-btn-selected;
+        border-radius: 10px;
+        color: $color-btn-selected;
+    }
+
+    .optionbutton--selected:hover > svg >.optionbutton__icon--selected {
+        fill: $hover-color;
+    }
+
+    .optionbutton:hover > svg > path {
+        fill: $background-btn-selected;
+    }
+
+    .optionbutton:hover > svg > g > path {
+        fill: $background-btn-selected;
+    }
+
+    .optionbutton:hover > .optionbutton__text {
+        color: $background-btn-selected;
+    }
+    .optionbutton.optionbutton--selected:hover > .optionbutton__text {
+        color: $hover-color;
+    }
+    .optionbutton__icon{
+        align-self: center;
+        fill:#8395a7;
+        height: 20.42px;
+        width: 20.42px;
+    }
+    .optionbutton__icon--selected{
+        align-self: center;
+        fill:$hover-color;
+        height: 20.42px;
+        width: 20.42px;
+    }
+    .optionbutton__text{
+        align-self: center;
+        font-weight: bold;
+        font-size: 0.656em;
+        margin-left: 15px;
+        @media screen and(min-width: 1024px){
+            font-size: 0.830em;
+        }
+        @media screen and(min-width: 1440px){
+            font-size: 0.922em;
+        }
+    }
+    .optionbutton--lastoption{
+        bottom: -430px;
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+

@@ -1,0 +1,126 @@
+$color-navbar:#ffffff;
+$font-color-input:#8395A7;
+
+@media screen and(min-width: 500px) {
+    .navbar{
+        background-color:$color-navbar;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+        padding-left: 20px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .navbar__search{
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        @media screen and(min-width: 1024px){
+            width: 290px;
+        }
+        
+    }
+    .navbar__search-icon, .profile__icons-icon , .profile__info-icon{
+        width :21.32px;
+        height: 21.32px;
+        align-self: center;
+    }
+    
+    .navbar__search-input{
+        border: none;
+        color: $font-color-input;
+        width: 215px;
+        @media screen and(min-width: 1024px){
+            width: 250px;
+        }
+    }
+    
+    .navbar__search-input::placeholder{
+        color: $font-color-input;
+    }
+    
+    .navbar__search-input:focus{
+        outline: none;
+    }
+    
+    .profile, .profile__info, .profile__icons{
+        display: flex;
+        width: 300px;
+        justify-content: space-around;
+        
+    }
+    
+    .profile{
+        justify-content: space-between;
+        position: relative;
+    }
+
+    
+    .profile__info{
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .profile__info-name{
+        font-size: 1em;
+        align-self: center;
+    }
+    
+    .profile__info-arrow{
+        align-self: center;
+        background-image: url(../images/arrowdown.svg);
+        cursor: pointer;
+        height: 7.78px;
+        width: 13.6px;
+    }
+    
+    .profile__info-check{
+        display: none;
+    }
+
+    .profile__info-check:checked + .profile__info-arrow{
+        
+        transform: matrix(-1, 0, 0, -1, 0, 0);
+        transition: transform 0.5s;
+    }
+
+    .profile__info-check:checked + .profile__info-arrow{
+        
+        transform: matrix(-1, 0, 0, -1, 0, 0);
+        transition: transform 0.5s;
+    }
+
+    .profile__info-check:not(:checked) + .profile__info-arrow{
+        
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        transition: transform 0.5s;
+    }
+
+    .profile__dropdown{
+        width: 160px;
+        position: absolute;
+        background-color: #FFFFFF;
+        top:42px;
+        left: 138px;
+        z-index: -1;
+        visibility:hidden;
+        opacity: 0;
+        border-radius: 8px;
+        box-shadow: 0px 15px 30px #00000029; 
+    }
+    .profile__info-check:checked  ~ .profile__dropdown{
+        z-index: 0;
+        visibility:visible;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
+    .profile__dropdown-item{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 12px;
+        width:150px;
+    }
+}
+
+
