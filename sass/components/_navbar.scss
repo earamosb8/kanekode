@@ -10,17 +10,13 @@ $font-color-input:#8395A7;
         padding-left: 20px;
         height: 45px;
         line-height: 45px;
-        position: fixed;
-        z-index:1000;
-        top:0;
-        right: 0;
-        left:0;
+        width: auto;
     }
     .navbar__search{
         display: flex;
         justify-content: space-between;
         width: 220px;
-        margin-left: 220px;
+        margin-left: 0;
         @media screen and(min-width: 1024px){
             width: 290px;
         }

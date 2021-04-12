@@ -14,12 +14,13 @@ $font-color: #222F3E;
         padding-left: 20px;
         padding-right: 20px;
         position: relative;
+        z-index: 2;
       
     }
 
     .main-dashboard__greeting{
         display: flex;
-        margin-top: 35px;
+        margin-top: 10px;
         justify-content: space-between;
         margin-bottom: 20px;
         z-index: -1;
