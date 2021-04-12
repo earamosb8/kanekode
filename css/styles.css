@@ -533,6 +533,7 @@
     width: 225px;
     height: 100%;
     position: relative;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 500px) and (min-width: 1024px) {
