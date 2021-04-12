@@ -9,146 +9,7 @@ $color-text-passrecovery: #6C5DD3;
 $color-btn-join: #354BD4;
 $color-link: #3345D7;
 
-
-.login{
-
-    align-self: center;
-    height: 100%;
-    
-    width: 48%;
-
-    @media screen and(min-width: 768px){
-        padding-top: 10px;
-    }
-
-    @media screen and(min-width: 1024px){
-        padding-top:75px;
-    }
-}
-
-.containerlogin{
-    height: 90%;
-    margin:auto;
-    @media screen and(min-width: 768px){
-        width: 85%;
-    }
-    @media screen and(min-width: 1024px){
-        width: 80%;
-    }
-}
-
-.containerlogin__title{
-    color: $color-title;
-    margin-bottom: 8px;
-
-    @media screen and(min-width: 768px){
-        text-align: center;
-    }
-
-    @media screen and(min-width: 1024px){
-        text-align: left;
-    }
-}
-
-.containerlogin__text{
-    color: $color-message;
-    margin-bottom: 40px;
-
-    @media screen and(min-width: 768px){
-        text-align: center;
-    }
-
-    @media screen and(min-width: 1024px){
-        text-align: left;
-    }
-}
-
-.socialbuttons{
-    display: flex;
-    justify-content: space-between;
-    @media screen and(min-width: 768px){
-        margin-bottom: 20px;
-    }
-
-    @media screen and(min-width: 1024px){
-        margin-bottom: 35px;
-    }
-}
-
-.btnsocial{
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    height: 43px;
-    justify-content: center;
-    width: 119px;
-
-    @media screen and(min-width: 768px){
-        width: 85px;
-    }
-    @media screen and(min-width: 1024px){
-        width: 119px;
-    }
-}
-
-.btnsocial__logo{
-    align-self: center;
-    height: 17px;
-    width: 17px;
-}
-
-.btnsocial--facebook{
-    background-color: $color-btn-facebook;
-}
-
-.btnsocial--gmail{
-    background-color: $color-btn-gmail;
-    border: solid 1px $gmail-border-color;
-}
-
-.btnsocial--linkedin{
-    background-color: $color-btn-linkedin;
-}
-
-.form{
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.field-email,.field-password{
-    margin-bottom: 30px;
-    width: 100%;
-}
-.field-email__input{
-    cursor: default;
-    font-size: 14px;
-}
-
-
-.field-password__input{
-    cursor: pointer;
-    position: absolute;
-    font-size: 14px;
-}
-
-
-.form__lostpass{
-    color: $color-text-passrecovery;
-    cursor: pointer;
-    margin-bottom:22px;
-
-    @media screen and(min-width: 768px){
-        text-align: center;
-    }
-
-    @media screen and(min-width: 1024px){
-        text-align: right;
-    }
-}
+//Login
 
 .btnjoin{
     border-radius: 30px;
@@ -165,8 +26,19 @@ $color-link: #3345D7;
     @media screen and(min-width: 768px){
         margin-bottom: 40px;
     }
+
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        width: 95%;
+        margin-bottom: 60px;
+    }
     @media screen and(min-width: 1024px){
-        margin-bottom: 90px;
+        margin-bottom: 70px;
+    }
+
+    @media screen and(min-width: 2560px){
+        width: 375px;
+        height: 80px;
+        font-size: 2.5em;
     }
 }
 
@@ -177,14 +49,142 @@ $color-link: #3345D7;
 
 }
 
-.form__register{
-    text-align: center;
+.btnsocial{
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    height: 43px;
+    justify-content: center;
+    width: 119px;
+
+    @media screen and(min-width: 768px){
+        width: 85px;
+    }
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        width: 25%;
+    }
+    @media screen and(min-width: 1024px){
+        width: 119px;
+    }
+    @media screen and(min-width: 2560px){
+        width: 28em;
+        height: 8em;
+    }
 }
 
-.form__register--link{
-    color: $color-link;
+.btnsocial__logo{
+    align-self: center;
+    height: 17px;
+    width: 17px;
+    @media screen and(min-width: 2560px){
+        width: 8em;
+        height: 5em;
+    }
 }
 
+.btnsocial--facebook{
+    background-color: $color-btn-facebook;
+}
+
+.btnsocial--gmail{
+    background-color: $color-btn-gmail;
+    border: solid 1px $gmail-border-color;
+}
+
+.btnsocial--linkedin{
+    background-color: $color-btn-linkedin;
+}
+
+.containerlogin{
+    height: 90%;
+    margin:auto;
+    @media screen and(min-width: 768px){
+        width: 85%;
+    }
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        width: 90%;
+    }
+    @media screen and(min-width: 1024px){
+        width: 400px;
+    }
+    @media screen and(min-width: 1440px){
+        width: 65%;
+    }
+
+    @media screen and(min-width: 2560px){
+        width: 1000px;
+        font-size: 66%;
+    }
+}
+
+.containerlogin__title{
+    color: $color-title;
+    margin-bottom: 8px;
+
+    @media screen and(min-width: 768px){
+        text-align: center;
+    }
+
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        text-align: center;
+    }
+
+    @media screen and(min-width: 1024px){
+        text-align: left;
+    }
+    @media screen and(min-width: 1440px){
+        font-size: 5.5vh;
+    }
+    @media screen and(min-width: 2560px){
+        font-size: 5rem;
+    }
+}
+
+.containerlogin__text{
+    color: $color-message;
+    margin-bottom: 40px;
+
+    @media screen and(min-width: 768px){
+        text-align: center;
+    }
+
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        text-align: center;
+    }
+
+    @media screen and(min-width: 1024px){
+        text-align: left;
+    }
+
+
+    @media screen and(min-width: 2560px){
+        font-size: 2.5rem;
+    }
+}
+
+.field-email,.field-password{
+    margin-bottom: 30px;
+    width: 100%;
+    @media screen and(min-width: 2560px){
+        height: 8em;
+    }
+}
+.field-email__input{
+    cursor: default;
+    font-size: 14px;
+    @media screen and(min-width: 2560px){
+        font-size: 3.2em;
+    }
+}
+
+.field-password__checkbox{
+    display: none;
+}
+
+.field-password__checkbox:checked + label{
+    background-image: url(../images/eyeopen.svg);
+    /* TRANSITION */
+}
 
 .field-password__eye{
     background-image: url(../images/eyeclose.svg);
@@ -202,16 +202,105 @@ $color-link: #3345D7;
         margin-left:90%;
     }
 
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        margin-left:86%;
+    }
+    
     @media screen and(min-width: 1024px){
         margin-left:93%;
     }
+    @media screen and(min-width: 2560px){
+        margin-top: 30px;
+        background-size: 48px 30px;
+        width: 60px;
+        height: 30px;
+        margin-left:90%;
+    }
+}
+.field-password__input{
+    cursor: pointer;
+    position: absolute;
+    font-size: 14px;
+    @media screen and(min-width: 2560px){
+        font-size: 3.2em;
+    }
 }
 
-.field-password__checkbox:checked + label{
-    background-image: url(../images/eyeopen.svg);
-    /* TRANSITION */
+.form{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-.field-password__checkbox{
-    display: none;
+.form__lostpass{
+    color: $color-text-passrecovery;
+    cursor: pointer;
+    margin-bottom:22px;
+
+    @media screen and(min-width: 768px){
+        text-align: center;
+    }
+
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        text-align: center;
+    }
+
+    @media screen and(min-width: 1024px){
+        text-align: right;
+    }
+
+    @media screen and(min-width: 2560px){
+        font-size: 3.2em;
+    }
+}
+
+.form__register{
+    text-align: center;
+    @media screen and(min-width: 2560px){
+        margin-top: 25px;
+        font-size: 3.5em;
+    }
+}
+
+.form__register--link{
+    color: $color-link;
+    cursor: pointer;
+}
+
+.inputlabel{
+    @media screen and(min-width: 2560px){
+        font-size: 3.2em;
+    }
+}
+
+.login{
+    align-self: center;
+    height: 100%;
+    width: 48%;
+    @media screen and(min-width: 768px){
+        padding-top: 15px;
+    }
+    @media screen and(max-width: 767px) and (min-height: 569px) {
+        padding-top: 15px;
+        width: 40%;
+    }
+
+    @media screen and(min-width: 1024px){
+        padding-top:4vh;
+    }
+}
+
+.socialbuttons{
+    display: flex;
+    justify-content: space-between;
+    @media screen and(min-width: 768px){
+        margin-bottom: 20px;
+    }
+
+    @media screen and(min-width: 1024px){
+        margin-bottom: 35px;
+    }
 }

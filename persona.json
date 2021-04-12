@@ -1,0 +1,17 @@
+{
+    "data": {
+        "first_name": "Liliana",
+        "last_name": "Mora",
+        "avatar": "./images/photo.png",
+        "counter":{
+            "cursosActivos" : "08",
+            "nuevasOportunidades" : 123,
+            "estudiantesEgresados": 45,
+            "certificadosEntregados": 20,
+            "estudiante":{
+                "activos": 14,
+                "inactivos": 22
+            }
+        }
+    }
+}

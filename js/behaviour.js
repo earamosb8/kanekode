@@ -1,6 +1,7 @@
 let inputPassword = document.querySelector('.field-password__input');
 let check = document.querySelector('.field-password__checkbox');
 let eyeImg = document.querySelector('.field-password__eye');
+let btnLogin = document.querySelector('.btnjoin');
 let counter = 2;
 let image = document.querySelector('.sliderimg__photo');
 let active = false;
@@ -20,7 +21,6 @@ inputPassword.addEventListener('click', function(){
 })
 
 
-
 //slider: change the images each 3 seconds
 
 let indice = 1;
@@ -30,10 +30,9 @@ window.addEventListener('load',function(){
     eyeImg.style.opacity= 1;
 
     function show(){
-        
         let opacity = Number(window.getComputedStyle(image).getPropertyValue("opacity"));
         if(opacity < 1){
-            opacity = opacity + 0.01;
+            opacity = opacity + 0.007;
             image.style.opacity= opacity;
         }
     }
@@ -60,7 +59,4 @@ image.addEventListener('click', function(){
     interval = setInterval(changeImages,4000);
 })
 })
-
-
-
 
