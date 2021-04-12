@@ -1,6 +1,7 @@
 let inputPassword = document.querySelector('.field-password__input');
 let check = document.querySelector('.field-password__checkbox');
 let eyeImg = document.querySelector('.field-password__eye');
+let btnLogin = document.querySelector('.btnjoin');
 let counter = 2;
 let image = document.querySelector('.sliderimg__photo');
 let active = false;
@@ -58,7 +59,4 @@ image.addEventListener('click', function(){
     interval = setInterval(changeImages,4000);
 })
 })
-
-
-
 

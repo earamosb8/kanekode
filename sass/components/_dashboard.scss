@@ -112,8 +112,16 @@ $color-icons:#8395a7;
     .checkboxbutton:checked + .menu > .optionbutton > .optionbutton__text{
         display: none;
     }
+    .checkboxbutton:checked ~ .container__dashboard > .main-dashboard{
+       margin-left:100px;
+       width: auto;
+       transition: width margin-left 1s;
+    }
+    .checkboxbutton:not(:checked) ~ .container__dashboard > .main-dashboard{
+        margin-left:225px;
+        width: auto;
+     }
 
-    
 
     .container{
         display: flex;
@@ -130,9 +138,14 @@ $color-icons:#8395a7;
         box-sizing: border-box;
         background-color: $background-color-menu;
         padding: 25px 0px 0px 0px;
-        position: relative;
+        position:fixed;
+        top:0;
+        left:0;
+        right: 0;
+        z-index:2000;
         transition:width 0.6s;
         width: 225px;
+        height: 100%;
         @media screen and(min-width: 1024px){
             width: 300px;
         }
@@ -231,6 +244,7 @@ $color-icons:#8395a7;
         left:0;
         right: 0;
         margin: auto;
+        z-index: -1;
     }
 }
 
