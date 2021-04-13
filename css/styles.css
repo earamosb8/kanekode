@@ -1027,7 +1027,7 @@
   color: #222F3E;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .main-dashboard {
     margin-left: 180px;
     width: calc(100% - $menu-tablet-width);
@@ -1055,12 +1055,12 @@
     color: #222F3E;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .block-greeting__text {
     font-size: 0.346em;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .block-greeting__title {
     font-size: 0.75em;
     font-weight: bold;
@@ -1068,23 +1068,23 @@
     font: normal normal bold;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .block-greeting__title {
     font-size: 0.9em;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .block-greeting {
     width: 300px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .block-calendar__logo {
     width: 100%;
     height: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .block-calendar__text {
     margin-top: 26px;
     color: #EE5253;
@@ -1092,13 +1092,13 @@
     font-size: 0.162em;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .block-calendar__text {
     margin-top: 26px;
     font-size: 0.25em;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .block-calendar {
     display: flex;
     margin-top: 8px;
@@ -1106,13 +1106,13 @@
     padding-left: 12%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .block-calendar__text--black {
     color: #222F3E;
     font-weight: 300;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .count-component__result {
     display: flex;
     flex-direction: column;
@@ -1123,12 +1123,12 @@
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .count-component__result {
     font-size: 10em;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .count-component {
     display: flex;
     justify-content: space-between;
@@ -1140,7 +1140,7 @@
     z-index: -1;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .count-component__students {
     position: relative;
     margin-top: 18px;
@@ -1149,21 +1149,21 @@
     align-items: center;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .count-component__students {
     flex-direction: row-reverse;
     align-items: space-between;
     margin-top: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .count-component__result--withborder {
     border-right: 1px solid #F4F5F7;
     width: 110px;
     height: 85px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .block-calendar__img {
     position: relative;
     margin-top: 11px;
@@ -1172,12 +1172,12 @@
     height: 40px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .block-calendar__img {
     height: 53px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .block-calendar__day {
     position: absolute;
     top: 5px;
@@ -1189,12 +1189,12 @@
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .block-calendar__day {
     font-size: 1.7rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .block-calendar__month {
     position: absolute;
     top: 25px;
@@ -1207,41 +1207,41 @@
     height: 12px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .block-calendar__month {
     font-size: 0.8rem;
     top: 33px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .result-number {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .result-number {
     font-size: 2.6rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .result-description {
     font-size: 0.73rem;
     font-weight: 500;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .students__img {
     width: 75px;
     height: 73px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .students__img {
     width: 120px;
     height: 120px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .test {
     position: absolute;
     width: 65px;
@@ -1251,7 +1251,7 @@
     z-index: 1;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .test {
     width: 95px;
     height: 100px;
@@ -1259,7 +1259,7 @@
     right: 56px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .test:hover + .students__info {
     visibility: visible;
     opacity: 1;
@@ -1267,7 +1267,7 @@
     transition: all 0.5s ease-in;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .students__info {
     width: 100px;
     height: 74px;
@@ -1284,13 +1284,13 @@
     border-radius: 4px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1024px) {
+@media screen and (min-width: 500px) and (min-width: 1024px) {
   .students__info {
     top: 180px;
     right: 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .info__circle {
     width: 8px;
     height: 8px;
@@ -1298,7 +1298,7 @@
     margin-left: 10px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .info__activos, .info__inactivos {
     margin-right: 5px;
     margin-left: 5px;
@@ -1306,7 +1306,7 @@
     font-weight: bold;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .ganancias {
     width: 100%;
     height: 500px;
