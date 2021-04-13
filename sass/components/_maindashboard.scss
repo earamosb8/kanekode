@@ -6,7 +6,7 @@ $font-color: #222F3E;
 }
 
 
-@media screen and(min-width: 768px){
+@media screen and(min-width: 500px){
     .main-dashboard{
         margin-left: $menu-tablet-width;
         width: calc(100% - $menu-tablet-width);
