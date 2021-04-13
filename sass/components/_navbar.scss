@@ -2,15 +2,24 @@ $color-navbar:#ffffff;
 $font-color-input:#8395A7;
 
 @media screen and(min-width: 500px) {
+
+    .header{
+        position: fixed;
+        top:0;
+        right:0;
+        left:172px;
+        height: 40px;
+    }
     .navbar{
         background-color:$color-navbar;
         display: flex;
         justify-content: space-between;
         padding-right: 20px;
         padding-left: 20px;
-        height: 45px;
+        height: 100%;
         line-height: 45px;
         width: auto;
+        position: static;
     }
     .navbar__search{
         display: flex;
@@ -198,7 +207,7 @@ $font-color-input:#8395A7;
         display: none;
     }
     .profile__icons-icon--label{
-        margin-top: 12px;
+        margin-top: 10px;
     }
     #checkbox-help:checked ~ .helpmenu {
         opacity: 1;

@@ -446,6 +446,27 @@
   }
 }
 @media screen and (min-width: 500px) {
+  .checkboxbutton:checked ~ .container__dashboard > .header {
+    left: 85px;
+    transition: left 0.6s;
+  }
+}
+@media screen and (min-width: 500px) {
+  .checkboxbutton:not(:checked) ~ .container__dashboard > .header {
+    transition: left 0.553s;
+  }
+}
+@media screen and (min-width: 500px) and (min-width: 1024px) {
+  .checkboxbutton:not(:checked) ~ .container__dashboard > .header {
+    left: 230px;
+  }
+}
+@media screen and (min-width: 500px) and (min-width: 1440px) {
+  .checkboxbutton:not(:checked) ~ .container__dashboard > .header {
+    left: 243px;
+  }
+}
+@media screen and (min-width: 500px) {
   .checkboxbutton:checked + .menu > .menu__buttonandtitle {
     flex-direction: column;
     margin: auto;
@@ -511,6 +532,28 @@
   }
 }
 @media screen and (min-width: 500px) {
+  .checkboxbutton:checked ~ .container__dashboard > .main-dashboard {
+    margin-left: 96px;
+    transition: margin-left 0.5s;
+  }
+}
+@media screen and (min-width: 500px) {
+  .checkboxbutton:not(:checked) ~ .container__dashboard > .main-dashboard {
+    margin-left: 180px;
+    transition: margin-left 0.5s;
+  }
+}
+@media screen and (min-width: 500px) and (min-width: 1024px) {
+  .checkboxbutton:not(:checked) ~ .container__dashboard > .main-dashboard {
+    margin-left: 234px;
+  }
+}
+@media screen and (min-width: 500px) and (min-width: 1440px) {
+  .checkboxbutton:not(:checked) ~ .container__dashboard > .main-dashboard {
+    margin-left: 247px;
+  }
+}
+@media screen and (min-width: 500px) {
   .container {
     display: flex;
     height: 100vh;
@@ -530,15 +573,20 @@
     padding: 25px 0px 0px 0px;
     z-index: 0;
     transition: width 0.6s;
-    width: 225px;
+    position: fixed;
+    width: 180px;
     height: 100%;
-    position: relative;
     overflow: hidden;
   }
 }
 @media screen and (min-width: 500px) and (min-width: 1024px) {
   .menu {
-    width: 300px;
+    width: 234px;
+  }
+}
+@media screen and (min-width: 500px) and (min-width: 1440px) {
+  .menu {
+    width: 247px;
   }
 }
 @media screen and (min-width: 500px) {
@@ -668,15 +716,24 @@
   }
 }
 @media screen and (min-width: 500px) {
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 172px;
+    height: 40px;
+  }
+
   .navbar {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
     padding-left: 20px;
-    height: 45px;
+    height: 100%;
     line-height: 45px;
     width: auto;
+    position: static;
   }
 
   .navbar__search {
@@ -906,7 +963,7 @@
 }
 @media screen and (min-width: 500px) {
   .profile__icons-icon--label {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 500px) {
@@ -972,13 +1029,13 @@
 
 @media screen and (min-width: 768px) {
   .main-dashboard {
-    width: 100%;
+    margin-left: 180px;
+    width: calc(100% - $menu-tablet-width);
     display: grid;
     padding-top: 45px;
     padding-left: 20px;
     padding-right: 20px;
-    position: relative;
-    z-index: 2;
+    z-index: 0;
   }
 
   .main-dashboard__greeting {
@@ -1251,9 +1308,8 @@
 }
 @media screen and (min-width: 768px) {
   .ganancias {
-    width: 97%;
+    width: 100%;
     height: 500px;
-    margin: auto;
     margin-top: 20px;
     background-color: white;
   }
