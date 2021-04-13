@@ -5,6 +5,10 @@ $color-btn-selected:#FFFFFF;
 $background-btn-burger:#222F3E;
 $hover-color:#FFFFFF;
 $color-icons:#8395a7;
+$menu-tablet-width: 180px;
+$menu-laptop-width: 234px;
+$menu-laptopl-width:247px;
+$menu-collapse-width: 96px;
 
 
 //Dashboard
@@ -57,8 +61,28 @@ $color-icons:#8395a7;
     }
     
     .checkboxbutton:checked + .menu{
-        width: 96px;
+        width: $menu-collapse-width;
     }
+
+    .checkboxbutton:checked ~ .container__dashboard > .header {
+        left: 85px;
+        transition: left 0.6s;
+    }
+
+    .checkboxbutton:not(:checked) ~ .container__dashboard > .header {
+        transition: left 0.553s;
+        @media screen and(min-width: 1024px){
+            left:230px;
+            
+        }
+
+        @media screen and(min-width: 1440px){
+            left:243px;
+           
+        }
+    }
+
+    
     
     .checkboxbutton:checked + .menu > .menu__buttonandtitle{
         flex-direction: column;
@@ -114,6 +138,22 @@ $color-icons:#8395a7;
         display: none;
     }
     
+    .checkboxbutton:checked ~ .container__dashboard > .main-dashboard{
+        margin-left: $menu-collapse-width;
+        transition: margin-left 0.5s;
+    }
+
+    .checkboxbutton:not(:checked) ~ .container__dashboard > .main-dashboard{
+        margin-left: $menu-tablet-width;
+        transition: margin-left 0.5s;
+        @media screen and(min-width: 1024px){
+            margin-left: $menu-laptop-width;
+        }
+        @media screen and(min-width: 1440px){
+            margin-left: $menu-laptopl-width;
+        }
+    }
+
     .container{
         display: flex;
         height: 100vh;
@@ -131,12 +171,15 @@ $color-icons:#8395a7;
         padding: 25px 0px 0px 0px;
         z-index: 0;
         transition:width 0.6s;
-        width: 225px;
+        position: fixed;
+        width: $menu-tablet-width;
         height: 100%;
-        position: relative;
         overflow: hidden;
         @media screen and(min-width: 1024px){
-            width: 300px;
+            width: $menu-laptop-width;
+        }
+        @media screen and(min-width: 1440px){
+            width: $menu-laptopl-width;
         }
     }
 
